@@ -1,0 +1,106 @@
+.catalog {
+    background-color: #F3F1F2;
+
+    & .card-title {
+        font-size: 25px;
+        font-weight: 700;
+        color: black;
+    }
+
+    & .catalog-card-btn {
+        padding: 7px 15px;
+        background-color: #ffb437;
+        border-radius: 20px;
+        border: 2px solid #ffb437;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+
+
+        &:hover {
+            border: 2px solid green;
+        }
+    }
+
+    & .castom_input .c__input input {
+        display: none;
+    }
+
+    & .castom_input .c__input input:checked + label {
+        color: #000;
+        background: #ffb437;
+    }
+    & .castom_input .c__input label {
+        padding: 0.2rem 1rem;
+        font-size: 1.2em;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.6em;
+        border-radius: 8px;
+        color: #000;
+        background: #F2F5F8;
+        cursor: pointer;
+        margin: 0.2rem;
+
+        @media (max-width: 466px) {
+            padding: 0.2rem 0.6rem;
+            font-size: 14px;
+            line-height: 1.4rem;
+        }
+    }
+
+    & .form-group {
+        width: 90%;
+        border: 2px solid green!important;
+    }
+
+    & .form-btn {
+        box-shadow: 2px 5px 10px 5px #999;
+        padding: 7px;
+
+        &:hover {
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    & .catalog__banck {
+        position: relative;
+        color: black!important;
+        width: 90%!important;
+
+        &:before {
+            content: '';
+            width: 70px;
+            height: 70px;
+            display: block;
+            position: absolute;
+            top: calc(80% - 35px);
+            right: -25px;
+            background: url(../../public/img/catalog/sale.png) no-repeat center center;
+            background-size: contain;
+            transform: rotate(-45deg);
+
+            @media (max-width: 320px) {
+                width: 60px;
+                height: 60px;
+                right: -20px;
+            }
+        }
+    }
+
+    & .old-prise {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    & .old-prise:before {
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: #ff4545;
+        transform: rotate(170deg);
+        bottom: 43%;
+    }
+}

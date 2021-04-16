@@ -1,0 +1,23 @@
+.title {
+    margin-bottom: 40px;
+    font-size: 55px;
+    font-weight: 800;
+    color: #ffb437;
+    text-align: center;
+
+    @media (max-width: 1030px) {
+        font-size: 45px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 35px;
+    }
+
+    @media (max-width: 767px) {
+       font-size: 45px;
+    }
+
+    @media (max-width: 416px) {
+        font-size: 35px;
+    }
+}

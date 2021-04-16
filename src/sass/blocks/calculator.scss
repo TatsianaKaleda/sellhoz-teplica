@@ -1,0 +1,236 @@
+.calculator {
+    background: url(../../public/img/calculator/bg.jpg) no-repeat top;
+    height: 100%;
+    background-size: cover;
+
+    & .container {
+        & .calculator-content {
+
+            & .title {
+                color: white;
+            }
+
+            & .calculator-content-one {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 40px;
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                    margin-bottom: 0;
+                }
+
+                & .content-line {
+                    flex: 0 0 calc(33% - 15px);
+                    margin-right: 10px;
+
+                    @media (max-width: 767px) {
+                        flex: 0 0 100%;
+                        margin-bottom: 20px;
+                        margin-right: 0;
+                    }
+
+                    & .choose {
+                        
+                        &-form-radio {
+                            display: inline-block;
+                            margin-right: 5px;
+                            
+                            & input[type=radio] {
+                                display: none;
+                            }
+                        
+                            & input[type=radio]:checked + span {
+                                background-color: green;
+                                border-color: transparent;
+                                color: white;
+                            }
+                        
+                            & .choose-form-radio-text {
+                                width: 100%;
+                                height: auto;
+                                display: inline-block;
+                                padding: 4px 11px;
+                                font-size: 16px;
+                                color: black;
+                                text-align: center;
+                                cursor: pointer;
+                                border-radius: 50%;
+                                border: 1px solid green;
+                                user-select: none;
+                                background-color: transparent;
+                                transition: border-color .3s linear, color .2s linear, background-color .3s linear;
+                        
+                                &:hover {
+                                    background-color: rgba(#ffb437, .2);
+                                }
+
+                                @media (max-width: 991px) {
+                                    padding: 4px 7px;
+                                    font-size: 14px;
+                                }
+
+                                @media (max-width: 767px) {
+                                    padding: 4px 11px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-two {
+                display: flex;
+                justify-content: space-between;
+
+                @media (max-width: 767px) {
+                    flex-direction: column;
+                }
+
+                & .first {
+                    flex: 0 0 50%;
+
+                    @media (max-width: 991px) {
+                        flex: 0 0 60%;
+                    }
+
+                    @media (max-width: 767px) {
+                        flex: 0 0 100%;
+                        margin: 0 auto;
+                    }
+
+                    @media (max-width: 560px) {
+                        margin: 0 0;
+                    }
+                }
+
+                & .second {
+                    flex: 0 0 33%;
+
+                    @media (max-width: 991px) {
+                        flex: 0 0 30%;
+                    }
+
+                    @media (max-width: 767px) {
+                        margin-top: 20px;
+                    }
+
+                    @media (max-width: 560px) {
+                        flex: 0 0 100%;
+                    }
+                }
+
+                & .choose {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &-left {
+                        margin-right: 30px;
+                    }
+
+                    &-left,
+                    &-right {
+                        display: flex;
+                        flex-direction: column;
+                        
+                        &-form-radio {
+                            display: inline-block;
+                            margin-right: 10px;
+
+                            & label {
+                                font-size: 16px;
+
+                                @media (max-width: 991px) {
+                                    font-size: 14px;
+                                }
+                            }
+                                
+                            & input[type=radio] {
+                                display: none;
+                            }
+
+                            & input[type=checkbox] {
+                                display: none;
+                            }
+                        
+                            & input[type=checkbox]:checked + span {
+                                background-color: green;                                    border-color: transparent;
+                                color: white;
+                            }
+
+                            & input[type=radio]:checked + span {
+                                background-color: green;                                    border-color: transparent;
+                                color: white;
+                            }
+                            
+                            & .choose-form-radio-text {
+                                margin-right: 10px;
+                                width: 10px;
+                                height: 10px;
+                                display: inline-block;
+                                padding: 7px;
+                                font-size: 1.2rem;
+                                color: black;
+                                text-align: center;
+                                cursor: pointer;
+                                border-radius: 50%;
+                                border: 1px solid green;
+                                user-select: none;
+                                background-color: transparent;
+                                                            
+                                &:hover {
+                                    background-color: rgba(#ffb437, .2);
+                                }
+                            }
+                        }
+                    }
+
+                    @media (max-width: 560px) {
+                        flex-direction: column;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.name {
+    display: flex;
+
+    & .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 50%;
+        width: 26px;
+        height: 26px;
+        margin-right: 7px;
+    }
+
+    & .name-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: black;
+
+        @media (max-width: 991px) {
+            font-size: 13px;
+        }
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+        }
+    }
+}
+
+.ps {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,110 @@
+.extra {
+    background-color: #F3F1F2;
+
+    & .container {
+
+
+        & .extra-subtitle {
+            margin-bottom: 30px;
+            font-size: 25px;
+            font-weight: 700;
+            text-align: center;
+
+            @media (max-width: 635px) {
+                font-size: 18px;
+            }
+        }
+
+        & .extra-content {
+
+            &-item {
+                margin-bottom: 20px;
+
+                &-title {
+                    padding: 0 5px;
+
+                    &-name {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        padding: 10px;
+                        background-color: green;
+                        border-radius: 20px;
+                        color: white;
+                        font-size: 24px;
+                        font-weight: 700;
+                        
+                        @media (max-width: 974px) {
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+                    }
+
+                    &-line {
+                        width: 100%;
+                        border-bottom: 8px solid green;
+                        margin-top: -8px;
+                        margin-left: 20px;
+                    } 
+
+                    
+                }
+
+                &-info {
+                    display: flex;
+                    padding: 30px 10px;
+
+                    &-img {
+                        margin: 0 10px;
+                        border: 7px solid green;
+                        border-radius: 10px;
+                        width: 150px;
+                        height: 150px;
+                        object-fit: cover;
+                        align-self: center;
+
+                        @media (max-width: 465px) {
+                           margin-bottom: 10px;
+                        }
+                    }
+
+                    &-text {
+                        font-size: 18px;
+                        font-weight: 600;
+
+                        @media (max-width: 700px) {
+                            font-size: 14px;
+                        }
+                    }
+
+                    @media (max-width: 465px) {
+                        flex-direction: column;
+                        padding: 15px 10px;
+                    }
+                }
+
+                
+            }
+
+            &-item:nth-child(even) {
+
+                & .extra-content-item-title {
+                    transform: scale(-1,1);
+                    padding: 0 5px;
+                }
+
+                & .extra-content-item-title-name {
+                    transform: scale(-1,1);
+                }
+
+                & .extra-content-item-info {
+                    flex-direction: row-reverse;
+
+                    @media (max-width: 465px) {
+                        flex-direction: column;
+                        padding: 15px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

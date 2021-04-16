@@ -1,0 +1,106 @@
+.buy {
+    background-color: #F3F1F2;
+
+    & .container {
+
+        & .buy-content {
+            display: flex;
+            justify-content: space-between;
+
+            &-other,
+            &-our {
+                flex: 0 0 40%;
+            }
+
+            &-other {
+                @media (max-width: 771px) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            & .buy-content-icon {
+                margin-top: 47px;
+
+                &-item {
+                    min-height: 150px;
+
+                    & .icon-border {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 35px;
+                        border-radius: 50%;
+                        border: 2px solid green;
+                        width: 70px;
+                        height: 70px;
+                    
+                        & i {
+                            color: green;
+                        }
+
+                    }
+                }
+
+                @media (max-width: 771px) {
+                    display: none;
+                }
+            }
+
+            &-other,
+            &-our {
+
+                & .buy-content-other-title,
+                & .buy-content-our-title {
+                    margin-bottom: 20px;
+                    color: black;
+                    font-size: 25px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+
+                    @media (max-width: 1200px) {
+                        font-size: 22px;
+                    }
+                }
+
+                & .buy-content-other-item,
+                & .buy-content-our-item {
+                    display: flex;
+                    min-height: 150px;
+
+                    & .fa-times-circle {
+                        margin-left: 10px;
+                        font-size: 27px;
+                        color: red;
+
+                        @media (max-width: 771px) {
+                            margin-left: 20px;
+                        }
+                    }
+
+                    & .fa-check-circle {
+                        margin-right: 10px;
+                        font-size: 27px;
+                        color: green;
+
+                        @media (max-width: 771px) {
+                            margin-right: 20px;
+                        }
+                    }
+
+                    & .buy-content-other-item-text,
+                    & .buy-content-our-item-text {
+                        font-size: 16px;
+                    }
+
+                    @media (max-width: 771px) {
+                        min-height: auto;
+                    }
+                }
+            }
+
+            @media (max-width: 771px) {
+                flex-direction: column;
+            }
+        }
+    }
+}

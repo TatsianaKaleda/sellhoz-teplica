@@ -1,0 +1,120 @@
+.why {
+    background-color: #F3F1F2;
+
+    & .title {
+        text-transform: uppercase;
+    }
+
+    & .why-subtitle {
+        margin-bottom: 20px;
+        width: 80%;
+        font-size: 18px;
+        text-align: start;
+
+        @media (max-width: 991px) {
+            font-size: 14px;
+        }
+    }
+
+    & .why-content {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        &-picture {
+            margin-right: 30px;
+
+            &-title {
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 700;
+
+                @media (max-width: 991px) {
+                    font-size: 14px;
+                }
+            }
+
+            & .like {
+                color: green;
+            }
+
+            & .dislike {
+                color: red;
+            }
+
+            @media (max-width: 767px) {
+                margin: 0 auto 10px;
+            }
+        }
+
+        &-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &-like,
+            &-dislike {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                border-radius: 50%;
+                width: 80px;
+                height: 80px;
+                flex-shrink: 0;
+                text-align: center;
+
+                & .fa-thumbs-up,
+                & .fa-thumbs-down {
+                    color: white;
+                    font-size: 40px;
+
+                    @media (max-width: 991px) {
+                        font-size: 30px;
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            &-like {
+                background-color: green;
+            }
+
+            &-dislike {
+                background-color: red;
+            }
+
+            &-block {
+                margin-left: 20px;
+
+                &-title {
+                    font-size: 22px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #ffb437;
+                    text-align: center;
+
+                    @media (max-width: 991px) {
+                        font-size: 16px;
+                    }
+                }
+
+                &-text {
+                    font-size: 16px;
+
+                    @media (max-width: 991px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+}

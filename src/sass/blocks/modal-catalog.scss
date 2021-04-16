@@ -1,0 +1,55 @@
+.modal {
+    &-dialog {
+        & .modal-content {
+            & .modal-header {
+                & .modal-title {
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+            }
+
+            & .modal-body {
+                & .detail {
+                    text-align: center;
+
+                    &-title {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    &-text {
+                        font-size: 16px;
+                    }
+                }
+
+                & .equipment {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+
+                    &-item {
+                        flex: 0 0 30%;
+                        margin: 7px;
+
+                        &-name {
+                            text-align: center;
+                            font-size: 18px;
+                            font-weight: 600;
+                        }
+
+                        & img {
+                            border-radius: 20px;
+                            border: 1px solid green;
+                            width: 100%;
+                        }
+                        & .equipment-item-price {
+                            text-align: center;
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

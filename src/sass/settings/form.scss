@@ -1,0 +1,31 @@
+.form-group {
+    margin: 0 auto 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0 ,.2);
+    overflow: hidden;
+    
+}
+
+.form-btn {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 7px;
+    background: #ffb437;
+    border: 2px solid #ffb437;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+        border: 2px solid rgba(0, 0, 0 ,.2);
+    }
+
+    &.disabled {
+        background: rgba(242, 205, 142, 0.4);
+        border: 2px solid red;
+        pointer-events: none;
+        cursor: grab;
+    }
+}

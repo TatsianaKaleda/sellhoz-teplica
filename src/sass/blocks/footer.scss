@@ -1,0 +1,123 @@
+.footer {
+    background: url(../../public/img/footer/sam.png) no-repeat left;
+    background-size: contain;
+    max-height: 750px;
+    height: 100%;
+
+    &-container {
+        margin: 0 auto;
+        padding: 0 40px;
+        display: flex;
+        justify-content: flex-end;
+
+        &-info {
+            width: 50%;
+            
+
+            &-box {
+                padding: 15px;
+                background-color: rgba(128, 128, 128, .8);
+                border-radius: 20px;
+                color: white;
+                text-align: center;
+
+                &-number {
+                    display: block;
+                    margin-bottom: 10px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover {
+                        text-decoration: none;
+                        color: white;
+                    }
+
+                    @media (max-width: 945px) {
+                        font-size: 16px;
+                    }
+
+                    & .container-img {
+                        width: 30px;
+                        height: 30px;
+
+                        & img {
+                            width: 30px;
+                            height: 30px;
+                        }
+                    }
+                }
+
+                &-manager,
+                &-text {
+                    font-size: 18px;
+                    font-weight: 600;
+
+                    @media (max-width: 945px) {
+                        font-size: 16px;
+                    }
+                }
+
+                &-btn {
+                    margin-bottom: 10px;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    border: 2px solid #ffb437;
+                    background: #ffb437;
+                    color: white;
+                    box-shadow: 2px 5px 10px 5px #999;
+                    font-size: 18px;
+                    font-weight: 600;
+
+                    &:hover {
+                        border: 2px  solid green;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                    @media (max-width: 945px) {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &-email {
+                margin-top: 20px;
+            }
+
+            &-email,
+            &-adress {
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: 600;
+                color: black;
+                text-align: center;
+
+                @media (max-width: 945px) {
+                    font-size: 16px;
+                }
+            }
+
+            @media (max-width: 889px) {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 889px) {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 929px) {
+        max-height: 674px;
+    }
+
+    @media (max-width: 889px) {
+        background: none;
+        background-color: #F3F1F2;
+        max-height: none;;
+    }
+}

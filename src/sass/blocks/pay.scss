@@ -1,0 +1,234 @@
+.pay {
+    background-color: #F3F1F2;
+
+    & .container {
+        & .pay-content {
+            &-info {
+                display: flex;
+                justify-content: space-between;
+
+                &-item {
+                    flex: 0 0 30%;
+                    margin: 20px auto 0;
+                    
+                    &-icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0 auto 20px;
+                        border-radius: 50%;
+                        border: 3px solid green;
+                        width: 100px;
+                        height: 100px;
+
+                        & p {
+                            margin-bottom: 0;
+                            font-size: 25px;
+                            font-weight: 600;
+                            color: green;
+                            text-align: center;
+                            line-height: 1;
+
+                            & span {
+                                font-size: 18px;
+                            }
+                        }
+
+                        & i {
+                            font-size: 39px;
+                            color: green;
+                        }
+                        
+                    }
+
+                    &-text {
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-align: center;
+                    } 
+                }
+                
+                @media (max-width: 460px) {
+                    flex-direction: column;
+                }
+            }
+            
+            &-forma {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+
+                & .form-group,
+                & .form-btn {
+                    flex: 0 0 30%;
+                }
+
+                & .form-group {
+                    margin-bottom: 0;
+                    border: 2px solid green;
+                }
+
+                & .form-btn {
+                    height: calc(1.5em + 0.75rem + 2px);
+                }
+
+                @media (max-width: 991px) {
+                    flex-direction: column;
+
+                    & .form-group,
+                    & .form-btn {
+                        width: 100%;
+                        margin-bottom: 15px;
+                    }
+
+                }
+            }
+
+            &-block {
+                margin-top: 50px;
+                padding-bottom: 60px;
+                display: flex;
+                background: url(../../public/img/pay/card-bg.png) no-repeat right;
+                background-size: contain;
+                
+                &-text {
+                    position: relative;
+                    padding: 20px;
+                    background-color: rgba(255, 180, 55, .8);
+                    border-radius: 20px;
+                    color: white;
+
+                    &-title {
+                        font-size: 25px;
+                        font-weight: 600;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+
+                    &-list {
+                        margin-top: 20px;
+                        padding-left: 0;
+
+                        &-item {
+                            display: flex;
+                            justify-content: space-between;
+                            list-style-type: none;
+
+                            & i {
+                                margin-right: 10px;
+                                color: white;
+                                font-size: 25px;
+                            }
+
+                            & .pay-item-text {
+                                margin-bottom: 10px;
+                                &-title {
+                                    margin-bottom: 0;
+                                    text-transform: uppercase;
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                }
+
+                                &-info {
+                                    margin-bottom: 0;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .call-you {
+                        position: absolute;
+                        bottom: -28%;
+                        right: -9%;
+                        width: 100px;
+                        height: 100px;
+                        border: 2px solid green;
+                        background: green;
+                        border-radius: 50%;
+                        z-index: 555;
+                        padding-top: 20px;
+                        text-align: center;
+                        animation: beat .8s infinite alternate;
+                        transform-origin: center;
+                    
+                        @keyframes beat{
+                            to { transform: scale(1.4); }
+                        }
+                    
+                        &:hover {
+                            opacity: 1;
+                            border: 2px solid white;
+                        }
+                    
+                        @media (max-width: 600px) {
+                            width: 80px;
+                            height: 80px;
+                        }
+                    
+                        & svg {
+                            @media (max-width: 600px) {
+                                width: 35px;
+                                height: 35px;
+                            }
+                        }
+
+                        @media (max-width: 767px) {
+                            bottom: -16%;
+                        }
+
+                        @media (max-width: 645px) {
+                            right: -1%;
+                        }
+
+                        @media (max-width: 460px) {
+                            bottom: -9%;
+                            right: 7%;
+                        }
+                    }
+                }
+
+                @media (max-width: 991px) {
+                    background: none;
+                }
+            }
+
+            & .swiper-container {
+                position: relative;
+                width: 100%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+
+                & .swiper-slide {
+                    object-position: center;
+                    object-fit: cover;
+                    width: 300px;
+                    height: auto;
+
+                    &-name,
+                    &-time {
+                        font-size: 14px;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+
+                    & img {
+                        margin: 0 auto;
+                        width: 270px;
+                    }
+                }
+            }
+
+            & .next {
+                font-size: 18px;
+                font-weight: 600;
+                text-align: center;
+
+                @media (max-width: 463px) {
+                    font-size: 12px;
+                }
+            }
+          
+        }
+    }
+}

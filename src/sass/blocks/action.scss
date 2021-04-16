@@ -1,0 +1,50 @@
+.action {
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url(../../public/img/action/bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+
+    & .title {
+        color: green;
+    }
+
+    & .action-subtitle {
+        margin: 100px 0;
+        font-size: 30px;
+        font-weight: 700;
+        color: green;
+        text-align: center;
+
+        & span { 
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border-radius: 50%;
+            background-color: #ffb638;
+            width: 40px;
+            height: 40px;
+            font-size: 30px;
+            color: white;
+        }
+    }
+
+    & .action-btn {
+        border-radius: 20px;
+        background-color: green;
+        border: 2px solid green;
+        color: #ffb638;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 10px 20px;
+        text-align: center;
+
+        &:hover {
+            border: 2px solid #ffb638;
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

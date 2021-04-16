@@ -1,0 +1,62 @@
+.modal {
+    font-family: 'Roboto', sans-serif;
+  
+    & .modal-dialog {
+        max-width: 640px;
+        margin: 30px auto;
+
+        @media (max-width: 1020px) {
+            max-width: 500px;
+        }
+
+        @media (max-width: 578px) {
+            max-width: 300px;
+
+        }
+
+        & .modal-content {
+            padding: 10px 20px 20px;
+            background: #E5E5E5;
+            box-shadow: 0px 3.20026px 40.0032px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+
+            & .modal-header {
+                border-bottom: none;
+            }
+  
+            & .modal-body {
+                padding: 0;
+  
+                & .modal-title {
+                    font-weight: bold;
+                    font-size: 30px;
+                    line-height: 35px;
+                    text-align: center;
+                    color: #000000;
+
+                    @media (max-width: 1020px) {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+  
+                    & .modal-subtitle {
+                        margin-top: 30px;
+                        display: block;
+                        margin-bottom: 50px;
+                        color: black;
+                        font-weight: 500;
+                        font-size: 30px;
+                        line-height: 35px;
+                        text-align: center;
+        
+                        @media (max-width: 1020px) {
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                    }
+                }    
+            } 
+        }
+    }
+}
